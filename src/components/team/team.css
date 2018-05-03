@@ -1,0 +1,102 @@
+#team-Container {
+    background-image: url("../../assets/images/teamBackImg.png");
+    background-position: center;
+}
+
+#team-Container .content {
+    display:flex;
+    padding:150px 0;
+    justify-content: space-evenly;
+}
+
+#team-Container .content .Section1 {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#team-Container .content .Section1 .title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#team-Container .content .Section1 .desc {
+    margin-top: 50px;
+    width: 250px;    
+}
+
+
+#team-Container .content .Section2 .row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-Container .content .Section2 .row2 {
+    display: flex;
+    justify-content: center;
+}
+#team-Container .content .Section2 .memeber-profile {
+    position: relative;
+    margin: 10px;
+    width: 217px;
+}
+
+#team-Container .content .Section2 .memeber-profile .coverArea {
+    position: absolute;
+    top: 0;
+    background-color: #50E2C1;
+    opacity: 0.8;
+    margin:5%;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+
+#team-Container .content .Section2 .memeber-profile .coverArea .name {
+    font-weight: bold;
+    margin-top:50%;
+}
+
+#team-Container .content .Section2 .memeber-profile .coverArea .link {
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    #team-Container .content {
+        display: block;
+        padding:0;
+    }
+    #team-Container .content .Section1 {
+        text-align:center;
+    }
+
+    #team-Container .content .Section1 .desc {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #team-Container .content .Section2 .row1 {
+        flex-direction: column;
+    }
+
+    #team-Container .content .Section2 .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team-Container .content .Section1 .desc {
+        margin:0;
+    }
+
+    #team-Container {
+        background-image: url("../../assets/images/teamBackImg.png");
+        background-size: cover;
+    }
+
+    #team-Container .content .Section1 .title {
+        font-size: 36px;
+    }
+}

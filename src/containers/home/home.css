@@ -1,0 +1,12 @@
+#HomeContainer{
+  max-width:1440px;
+  margin:0 auto;
+}
+
+.home-humility{
+  text-align: center;
+}
+
+.home-fa-twitter{
+  margin-left: 2em;
+}

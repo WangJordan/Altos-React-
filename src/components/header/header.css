@@ -1,0 +1,217 @@
+  #header {
+    width: 100%;
+    display: relative;
+    padding: 190px 0;
+  }
+
+  .invisible {
+    display:none;
+  }
+
+  .menuToggle-container {
+    text-align: right;
+  }
+
+  .menu-toggler {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 1.25em;
+  }
+
+  .menu-toggler:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1.5em;
+    height: 0.16em;
+    background: white;
+    box-shadow: 0 0.45em 0 0 white, 0 1em 0 0 white;
+  }
+
+  .menu-toggler-close {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .menu-toggler-close:before, .menu-toggler-close:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: white;
+    height: 4px;
+  }
+
+  .menu-toggler-close:before {
+    transform : rotate(45deg);
+  }
+
+  .menu-toggler-close:after {
+    transform : rotate(-45deg);
+  }
+
+  .navigation {
+    position: absolute;
+    top:0;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand {
+    margin-left:100px;
+    margin-top:18px;
+  }
+
+  .nav-item {
+    text-align: right;
+  }
+
+  .nav-link {
+    color:white;
+  }
+
+  .navbar-brand {
+    position: relative;
+    padding-left: 50px;
+    left: 132px;
+    top: 18px;
+  }
+
+  #header li{
+    list-style: none;
+  }
+
+  .menu-container .menuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 36px;
+  }
+
+  .social-links .links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-right: 100px;
+  }
+  .social-links .links li {
+    margin-left: 10px;
+  }
+
+  .mobile-menu-container {
+    margin-top: 50px;
+  }
+
+  .center_logo {
+    text-align: center;
+  }
+
+  .header-text {
+    color: white;
+    font-size: 36px;
+    margin-left:14%;
+    margin-top:15px;
+  }
+
+  .header-text span {
+    color: #50E2C1;
+  }
+/**
+  Responsive settings
+  5.2.2018 Jordan
+*/ 
+
+@media screen and (min-width : 768px) {
+ .responsive-menu {
+   display: none;
+ }
+}
+
+@media screen and (max-width : 1024px) {
+  .brand {
+    margin-left: 18px;
+  }
+
+  .social-links .links {
+    margin-right: 25px;
+  }
+
+  .center_logo img{
+    width:200px;
+  }
+
+  .header-text {
+    font-size: 30px;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  #header {
+    padding: 120px 0;
+  }
+  .menu-toggler {
+    display: block;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .brand img {
+    width: 80px;
+  }
+
+  .center_logo img{
+    width:150px;
+  }
+
+  .center_logo {
+    margin-top: 70px;
+  }
+
+  .header-text {
+    font-size: 20px;
+    margin-left: 9%;
+    margin-top: 5px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .mobile-menu-container .nav-link {
+    padding: 0 1rem;
+  }
+
+  .brand img {
+    width: 45px;
+  }
+
+  .center_logo img{
+    width: 110px;
+  }
+
+  .header-text {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+}
